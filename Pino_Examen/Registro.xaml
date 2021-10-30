@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Pino_Examen.Registro">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Text="Usuario Conectado:" Grid.Row="0" Grid.Column="0" FontSize="25"/>
+                <Label x:Name="txt_usr" Grid.Row="0" Grid.Column="1" FontSize="25"/>
+                <Label Text="Nombre: " Grid.Row="1" Grid.Column="0" FontSize="25"/>
+                <Entry x:Name="txt_Nombre" Keyboard="Text" Grid.Row="1" Grid.Column="1" FontSize="25"/>
+                <Label Text="Monto inicial" Grid.Row="2" Grid.Column="0" FontSize="25"/>
+                <Entry x:Name="txt_monto" Keyboard="Numeric" Grid.Row="2" Grid.Column="1" FontSize="25" />
+                <Button x:Name="btnCalcular" Text="Calcular" Clicked="btnCalcular_Clicked" Grid.Row="3" Grid.ColumnSpan="2"/>
+                <Label Text="Pago Mensaul" FontSize="25" Grid.Row="4" Grid.Column="0"/>
+                <Label x:Name="txt_mensual" FontSize="25" Grid.Row="4" Grid.Column="1"/>
+                <Button x:Name="btnGuardar" Text="Guardar" Clicked="btnGuardar_Clicked" Grid.Row="5" Grid.ColumnSpan="2"/>
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Pino_Examen.Login">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source="https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png" HeightRequest="150"/>
+            <Label Text="Usuario: " FontSize="25"/>
+            <Entry x:Name="txt_Usuario"  FontSize="20" />
+            <Label Text="Contraseña: " FontSize="25"/>
+            <Entry x:Name="txt_Clave" IsPassword="True" FontSize="20"/>
+            <Button x:Name="btn_Ingresar" Text="Iniciar Sesion" Clicked="btn_Ingresar_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
